@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#080b08">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<title>猎名场 · 撕名牌实况对战</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icon.svg">
+<link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="/css/app.css?v=20261113out">
+</head>
+<body>
+<div id="app" aria-live="polite"></div>
+<div id="out-screen" class="out-screen" aria-live="assertive" aria-atomic="true">
+  <div class="out-glow"></div>
+  <div class="out-inner">
+    <div class="out-kicker">ELIMINATED</div>
+    <div class="out-name" id="out-name"></div>
+    <div class="out-word">OUT</div>
+    <div class="out-sub">名牌已被撕掉 · 出局</div>
+  </div>
+</div>
+<div id="toasts" class="toasts" aria-live="assertive"></div>
+<div id="modal-root"></div>
+<div id="camera-root"></div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/vendor/leaflet/leaflet.js"></script>
+<script src="/vendor/jsqr/jsQR.js"></script>
+<script type="module" src="/js/app.js?v=20261113out"></script>
+</body>
+</html>

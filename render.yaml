@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: liemingchang-arena
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install && node build-inline.mjs
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"

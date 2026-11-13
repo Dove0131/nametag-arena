@@ -1,0 +1,19 @@
+{
+  "name": "nametag-arena",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "撕名牌实况对战 - 多人在线房间、定位、事件、技能卡",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@ngrok/ngrok": "^1.7.0",
+    "compression": "^1.8.2",
+    "express": "^5.3.0",
+    "jsqr": "^1.4.0",
+    "leaflet": "^1.9.4",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.4"
+  }
+}
